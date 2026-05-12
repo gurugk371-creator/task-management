@@ -1,6 +1,6 @@
 import React from 'react';
 import Sidebar from '../components/Sidebar';
-import { Mail, Instagram, Linkedin, Github, ArrowRight } from 'lucide-react';
+import { Mail, ArrowRight } from 'lucide-react';
 import clsx from 'clsx';
 
 export default function ContactUs() {
@@ -9,28 +9,9 @@ export default function ContactUs() {
       name: 'Email Support',
       icon: Mail,
       description: 'Send us an email for general inquiries or technical support.',
-      link: 'mailto:suyalpriyanshu2@gmail.com?subject=TaskPilot Support',
+      link: 'mailto:factstar524@gmail.com?subject=TaskPilot Support',
       label: 'Reach Out',
       color: 'bg-[#EA4335]'
-      
-    },
-    {
-      name: 'LinkedIn',
-      icon: Linkedin,
-      description: 'Connect professionally and reach out via LinkedIn.',
-      link: 'https://www.linkedin.com/in/priyanshu-suyal-5732b224a?utm_source=share_via&utm_content=profile&utm_medium=member_android',
-      label: 'Reach Out',
-      color: 'bg-[#0077B5]'
-     
-    },
-    {
-      name: 'Instagram',
-      icon: Instagram,
-      description: 'Follow us for updates and DM for quick questions.',
-      link: 'https://www.instagram.com/priyanshu_suyal_?igsh=MW54MmNqYzhyeTlpOA==',
-      label: 'Reach Out',
-      color: 'bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888]'
-      
     }
   ];
 
@@ -47,11 +28,11 @@ export default function ContactUs() {
           </p>
         </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 relative z-10">
+        <div className="flex justify-center relative z-10">
           {contactOptions.map((option, idx) => (
             <div 
               key={idx}
-              className="group bg-slate-900 backdrop-blur-xl border border-slate-700/50 rounded-2xl p-8 hover:slate-600 transition-all duration-300 hover:translate-y-[-4px] shadow-xl flex flex-col"
+              className="group bg-slate-900 backdrop-blur-xl border border-slate-700/50 rounded-2xl p-8 hover:slate-600 transition-all duration-300 hover:translate-y-[-4px] shadow-xl flex flex-col w-full max-w-sm"
             >
               <div className={clsx(
                 "w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition-transform group-hover:scale-110 shadow-lg",

@@ -19,8 +19,10 @@ connectDB();
 // Initialize the Express application
 const allowedOrigins = [
   "http://localhost:3000",
-  process.env.CLIENT_URL
-];
+  "http://localhost:5173",
+  "https://task-management-eight-red.vercel.app",
+  process.env.CLIENT_URL  // Also supports dynamic env var on Render
+].filter(Boolean); // Remove any undefined/null values
 
 const app = express();
 const server = http.createServer(app);
